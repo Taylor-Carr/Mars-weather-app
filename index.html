@@ -9,68 +9,14 @@
     <title>Sol 377 Weather App</title>
 </head>
 <body>
-     <main class="mars-current-weather">
-        <h1 class="main-title">latest weather on elysium plantitia</h1>
-        <div class="date">
-            <h2 class="section-title section-title--date">Sol 377</h2>
-            <p class="date_day">December 4</p>
-        </div>
-        <div class="temp">
-            <h2 class="section-title"></h2>
-            <p class="reading">hihgh: -20c</p>
-            <p class="reading">Low: -30c</p>
-        </div>
 
-        <div class="wind">
-            <h2 class="section-title"></h2>
-            <p class="reading">44kph</p>
-        </div>
-
-        <div class="unit">
-            <label class="cel">C</label>
-            <input type="radio" id="cell" name="unti" checked>
-
-            <!--when unit toggle click check box needs to change--->
-            <button class="unit-toggle"></button>
-
-            <label class="fah">F</label>
-            <input type="radio" id="fah" name="unti">
-        </div>
-
-        <div class="previous-weather">
-            <!-- When clicked, toggle '.show-weather'
-             to .previous-weather div -->
-            <button for="weather-toggle" class="show-previous-weather"><span>&#8593;</span> <span class="sr-only">Show previous
-                    weather</span></button>
-        
-            <h2 class="main-title previous-weather__title">Previous 7 days</h2>
-        
-            <div class="previous-days" data-previous-sols></div>
-        </div>
-        
-        <template data-previous-sol-template>
-            <div class="previous-day">
-                <h3 class="previous-day__sol">
-                    Sol
-                    <span data-sol></span>
-                </h3>
-                <p class="previous-day__date" data-date></p>
-                <p class="previous-day__temp">
-                    High:
-                    <span data-temp-high></span>
-                    °<span data-temp-unit></span>
-                </p>
-                <p class="previous-day__temp">
-                    Low:
-                    <span data-temp-low></span>
-                    °<span data-temp-unit></span>
-                </p>
-                <button class="previous-day__more-info" data-select-button>more info</button>
-            </div>
-        </template>
-
-     </main>
-
-    <div class="previous-weather"></div>
+    <div>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
 </body>
 </html>
